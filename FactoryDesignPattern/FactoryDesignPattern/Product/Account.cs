@@ -1,5 +1,4 @@
-﻿
-namespace FactoryDesignPattern.Product
+﻿namespace FactoryDesignPattern.Product
 {
     internal abstract class StorageService
     {
