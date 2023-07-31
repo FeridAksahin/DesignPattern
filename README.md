@@ -1,4 +1,4 @@
-[*Specification*](https://github.com/FeridAksahin/DesignPattern/tree/main/SpecificationPattern) <br>
-[*Builder*](https://github.com/FeridAksahin/DesignPattern/tree/main/BuilderPattern) <br>
+[*Specification*](https://github.com/FeridAksahin/DesignPattern/tree/main/SpecificationDesignPattern) <br>
+[*Builder*](https://github.com/FeridAksahin/DesignPattern/tree/main/BuilderDesignPattern) <br>
 [*Factory*](https://github.com/FeridAksahin/DesignPattern/tree/main/FactoryDesignPattern) <br>
 *Adapter* - ASAP
