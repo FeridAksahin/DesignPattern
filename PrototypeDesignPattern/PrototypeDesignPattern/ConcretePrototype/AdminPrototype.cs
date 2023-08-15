@@ -16,14 +16,14 @@ namespace PrototypeDesignPattern.ConcretePrototype
             AdminFeature = adminFeature;
         }
 
-        public AdminPrototype(AdminPrototype otherInstance)
+        public AdminPrototype(AdminPrototype otherInstance) //copy constructor method for deep copy
         {
             AdminName = otherInstance.AdminName;
             AdminLevel = otherInstance.AdminLevel;
             AdminFeature = new AdmicFeaturePrototype(otherInstance.AdminFeature);
         }
 
-        public override Prototype Clone()
+        public override Prototype Clone() //shallow copy
         {
             return (Prototype)this.MemberwiseClone();
         }

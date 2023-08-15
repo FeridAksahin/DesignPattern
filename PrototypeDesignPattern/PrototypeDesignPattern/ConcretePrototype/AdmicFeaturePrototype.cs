@@ -16,12 +16,14 @@ namespace PrototypeDesignPattern.ConcretePrototype
             IsHaveUpdateMember = isHaveUpdateMember;
             IsHaveDeleteTopic = isHaveDeleteTopic;
         }
-        public AdmicFeaturePrototype(AdmicFeaturePrototype otherInstance)
+        
+        public AdmicFeaturePrototype(AdmicFeaturePrototype otherInstance) //copy constructor method for deep copy
         {
             IsHaveDeleteTopic = otherInstance.IsHaveDeleteTopic;
             IsHaveUpdateMember = otherInstance.IsHaveUpdateMember;
         }
-        public override Prototype Clone()
+
+        public override Prototype Clone() //shallow copy
         {
             return (Prototype)this.MemberwiseClone();
         }
