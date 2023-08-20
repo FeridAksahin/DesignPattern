@@ -21,16 +21,16 @@ In this project, the Prototype design pattern is applied to exemplify the clonin
 ### Usage 
 The Prototype design pattern as showcased here is particularly useful for creating new objects based on existing ones without the overhead of instantiating them from scratch. We use this model especially when initializing an object is resource intensive or when system performance is a priority. Here's how to use the provided design:
 1. **Cloning with Prototype:**
- - For each object that needs to be cloned, we inherit from the abstract class Prototype.
- - In the abstract ***Clone*** method, we ensure that each concrete object has its own cloning mechanism.
+   - For each object that needs to be cloned, we inherit from the abstract class Prototype.
+   - In the abstract ***Clone*** method, we ensure that each concrete object has its own cloning mechanism.
 2. **Shallow Copy:**
- - Use the Clone method on any object that implements the Prototype. This is we call the ***MemberwiseClone*** method where we provide a shallow copy of the object. 
- - It is important to note that the reference types of shallow copies will be the same as the original. Meaning, changes to nested objects (like ***AdminFeature*** in our case) in the cloned object will reflect on the original and vice versa.
+   - Use the Clone method on any object that implements the Prototype. This is we call the ***MemberwiseClone*** method where we provide a shallow copy of the object. 
+   - It is important to note that the reference types of shallow copies will be the same as the original. Meaning, changes to nested objects (like ***AdminFeature*** in our case) in the cloned object will reflect on the original and vice versa.
 3. **Deep Copy:**
- - For a completely independent copy where shared references aren't an issue, a deep copy is necessary.
- - This is achieved through ***copy constructors*** we wrote method (like the one in ***AdminPrototype*** and ***AdmicFeaturePrototype*** classes). By calling these constructors we wrote, we ensure the independence of the cloned object, and we make new instances of nested objects.
+   - For a completely independent copy where shared references aren't an issue, a deep copy is necessary.
+   - This is achieved through ***copy constructors*** we wrote method (like the one in ***AdminPrototype*** and ***AdmicFeaturePrototype*** classes). By calling these constructors we wrote, we ensure the independence of the cloned object, and we make new instances of nested objects.
 4. **Utilizing in a Service:**
- - In ***AdminController*** we provide an endpoint GetAllAdmin that demonstrates the use of both shallow and deep cloning methods. By invoking this ***endpoint***, one can observe the different cloning methods in action and their respective outcomes.
+   - In ***AdminController*** we provide an endpoint GetAllAdmin that demonstrates the use of both shallow and deep cloning methods. By invoking this ***endpoint***, one can observe the different cloning methods in action and their respective outcomes.
 
 
 ### Example Usage
