@@ -65,7 +65,7 @@ GET /api/Admin/GetAllAdmin
 ```
 
 ***Example Result***
-<img src="result.png">
+<img src="result.PNG">
 
 ## Getting Started
 
