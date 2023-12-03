@@ -37,7 +37,7 @@ Below are some sample scenarios for its use in the main method in the `Program.c
    foreach (var product in filter.Filter(GetDummyProductData(), new ConditionSpecification(Condition.New)))
    {
        WriteLine($" - {product.Name}");
-   }`
+   }
 2. Filtering for Best Seller And Used Products
    ```
     WriteLine("Best Seller And Used Products:");
@@ -45,7 +45,7 @@ Below are some sample scenarios for its use in the main method in the `Program.c
     new ConditionSpecification(Condition.Used))))
     {
        WriteLine($" - {product.Name}");
-    }`
+    }
 ## Getting Started
 
 To run the mini project, follow these steps:
