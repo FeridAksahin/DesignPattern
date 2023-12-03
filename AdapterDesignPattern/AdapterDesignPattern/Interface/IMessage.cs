@@ -2,6 +2,6 @@
 {
     public interface IMessage
     {
-        Task<string> GetMessage();
+        string GetMessage();
     }
 }

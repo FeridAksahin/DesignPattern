@@ -14,7 +14,7 @@ namespace AdapterDesignPattern.Controllers
             var newMessageService = new OldMessageService();
             var withAdapter = new OldMessageAdapter(newMessageService);
             var withoutAdapter = new NewMessageService();
-            return $"Message Received from Legacy Message Service : {await withAdapter.GetMessage()}\nMessage Received from New Message Service : {await withoutAdapter.GetMessage()}";
+            return $"Message Received from Legacy Message Service : {withAdapter.GetMessage()}\nMessage Received from New Message Service : {withoutAdapter.GetMessage()}";
         }
     }
 }

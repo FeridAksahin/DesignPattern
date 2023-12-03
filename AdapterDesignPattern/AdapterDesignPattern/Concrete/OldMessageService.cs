@@ -2,9 +2,9 @@
 {
     public class OldMessageService
     {
-        public Task<string> FetchNewMessage()
+        public string FetchNewMessage()
         {
-            return Task.FromResult("Example Message");
+            return "Example Message";
         }
     }
 

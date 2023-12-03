@@ -11,7 +11,7 @@ namespace AdapterDesignPattern.Adapter
             _newMessageService = newMessageService;
         }
 
-        public Task<string> GetMessage()
+        public string GetMessage()
         {
             return _newMessageService.FetchNewMessage();
         }

@@ -4,9 +4,9 @@ namespace AdapterDesignPattern.Concrete
 {
     public class NewMessageService : IMessage
     {
-        public Task<string> GetMessage()
+        public string GetMessage()
         {
-            return Task.FromResult("New Message Service");
+            return "New Message Service";
         }
     }
 }
